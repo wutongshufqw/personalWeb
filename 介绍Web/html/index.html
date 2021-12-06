@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页</title>
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/index.js"></script>
+</head>
+<body>
+<div class="login_layout">
+    <div class="login_left">
+        <p>用户登录</p>
+        <p>USER LOGIN</p>
+    </div>
+    <div class="login_center">
+        <table>
+            <tr>
+                <td class="td_left">
+                    <label for="username">用户名：</label>
+                </td>
+                <td class="td_right">
+                    <input id="username" name="username" placeholder="请输入账号" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_left">
+                    <label for="password">密码：</label>
+                </td>
+                <td class="td_right">
+                    <input id="password" name="password" placeholder="请输入密码" type="password">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_left">
+                    <label for="checkcode">验证码：</label>
+                </td>
+                <td class="td_right">
+                    <input id="checkcode" name="checkcode" type="text">
+                    <img alt="" id="img_check" src="../resource/checkcode.jpg">
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="2">
+                    <button id="button" onclick="login();">登录</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="login_right">
+        <p>未有账号？<a href="register.html">立即注册</a></p>
+    </div>
+</div>
+</body>
+</html>

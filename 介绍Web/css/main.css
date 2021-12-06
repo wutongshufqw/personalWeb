@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Hwxw;
+    src: url("../resource/汉仪尚巍手书W.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../resource/main_background.jpeg");
+    background-size: cover;
+}
+
+.main{
+    width: 100%;
+    height: 600px;
+}
+
+.top{
+    width: 100%;
+    height: 13%;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.main_img{
+    float: left;
+}
+
+.main_img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#title{
+    font-size: 50px;
+    font-family: Hwxw, serif;
+}
+
+.title{
+    float: left;
+}
+
+.edit{
+    height: 60px;
+    width: 120px;
+    margin:10px;
+    float: right;
+
+}
+
+#edit{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+    font-family: Hwxw, serif;
+    font-size: 50px;
+    color: palegreen;
+    border: 0px;
+}
+
+.center{
+    height: 350px;
+    width: 750px;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+.center_tag{
+    height: 100px;
+    width: 100px;
+    margin: 100px 20px;
+    float: left;
+}
+
+#center{
+    font-size: 100px;
+    font-family: Hwxw, serif;
+    color: gold;
+}
