@@ -88,7 +88,7 @@ window.onload= function (){
         if(window.getComputedStyle){
             return getComputedStyle(obj,null)[name];
         }else{
-            return obj.style[name];
+            return obj.currentstyle[name];
         }
     }
 }
