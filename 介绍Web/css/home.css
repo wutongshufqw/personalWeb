@@ -1,0 +1,74 @@
+@font-face {
+    font-family: Hwxw;
+    src: url("../resource/汉仪尚巍手书W.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 700px;
+}
+
+.top {
+    width: 100%;
+    height: 10%;
+    background-color: antiquewhite;
+}
+
+.main_img {
+    float: left;
+}
+
+.main_img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#title {
+    font-size: 50px;
+    font-family: Hwxw, serif;
+    background-color: antiquewhite;
+    border: 0;
+}
+
+.title {
+    float: left;
+}
+
+.edit {
+    height: 60px;
+    width: 120px;
+    margin-top: 5px;
+    float: right;
+}
+
+#edit {
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    opacity: 0.8;
+    font-family: Hwxw, serif;
+    font-size: 50px;
+    color: green;
+    border: 0;
+}
+
+hr{
+    width: 100%;
+    position: absolute;
+    size: 2px;
+}
+
+.center{
+    height: 93%;
+    background-image: url("../resource/hone_background.png");
+    background-size: cover;
+}
