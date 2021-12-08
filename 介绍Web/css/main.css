@@ -122,18 +122,18 @@ body {
     background-color: black;
 }
 
-.img1{
+.img1 {
     width: 520px;
     height: 320px;
 }
 
-.bottom{
+.bottom {
     width: 100%;
     height: 250px;
-    border:5px solid green;
+    border: 5px solid green;
 }
 
-#bt_left{
+#bt_left {
     width: 522px;
     height: 225px;
     margin: 1%;
@@ -144,14 +144,14 @@ body {
     border: 2px solid gray;
 }
 
-#home_introduction{
+#home_introduction {
     margin-left: 10px;
     font-family: Hwxw, serif;
     font-size: 50px;
     color: orange;
 }
 
-#home_introduction0{
+#home_introduction0 {
     margin-left: 10px;
     font-family: Hwxw, serif;
     font-size: 35px;
