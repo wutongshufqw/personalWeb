@@ -4,7 +4,7 @@ function img() {
     let img = document.getElementById("img0");
     img.style.border = "2px solid #20b39c";
     second = 1;
-    setInterval(jumppage, 250) ;
+    setInterval(jumppage, 250);
 }
 
 function jumppage() {

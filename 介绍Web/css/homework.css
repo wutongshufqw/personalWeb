@@ -1,0 +1,41 @@
+
+ body{
+     background: url("../img/background.jpg") no-repeat ;
+     background-size: 100%;
+}
+.home{
+    margin-left: 0;
+            float: left;
+}
+.register{
+    margin-right: 0;
+    float: right;
+    }
+.progress{
+    color:white;
+    font-size: 20px;
+    font-family: 楷体;
+}
+.top{
+    font-family: 隶书;
+    color: aquamarine;
+    font-size: 40px;
+}
+.bottom{
+    width: 1000px;
+    text-align: center;
+    color: #A6A6A6;
+    font-size: 2px;
+    float:left;
+    margin-top: 10px;
+    }
+    .one,.two,.three,.four{
+    float: left;
+    margin: 2px;
+}
+.div_left{
+    float:left;
+}
+.div_right{
+    float:right;
+}
