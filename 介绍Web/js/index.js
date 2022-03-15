@@ -2,9 +2,9 @@ function login(){
     let username = document.getElementById("username");
     let password = document.getElementById("password");
     let checkcode = document.getElementById("checkcode");
-    if(username.value=="admin") {
-        if(password.value=="666666") {
-            if (checkcode.value=="jgmxj")
+    if(username.value==="admin") {
+        if(password.value==="666666") {
+            if (checkcode.value==="jgmxj")
                 location.href = "main.html";
             else
                 window.alert("验证码错误！");

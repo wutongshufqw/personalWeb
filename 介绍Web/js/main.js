@@ -28,23 +28,24 @@ function edit() {
 }
 
 window.onload = function () {
-    var TAG_l = document.getElementById("left");
-    var TAG_r = document.getElementById("right");
+    let timer;
+    const TAG_l = document.getElementById("left");
+    const TAG_r = document.getElementById("right");
     //获得ul的元素
-    var imgList = document.getElementById("imgList");
+    const imgList = document.getElementById("imgList");
     //获得图片的数组
-    var imgArr = document.getElementsByClassName("img1");
-    var navId = document.getElementById("navId");
-    var outer = document.getElementById("outer");
+    const imgArr = document.getElementsByClassName("img1");
+    const navId = document.getElementById("navId");
+    const outer = document.getElementById("outer");
     imgList.style.width = 520 * (imgArr.length) + "px";
     //设置navId的位置 使其居中
     navId.style.left = (outer.offsetWidth - navId.offsetWidth) / 2 + "px";
     //得到所有的a 标签 如果有其他的A的话  这里需要注意要使用navId子元素的a
-    var alla = document.getElementById("navId");
-    var allA = alla.children;
-    var index = 0;
+    const alla = document.getElementById("navId");
+    const allA = alla.children;
+    let index = 0;
     allA[index].style.backgroundColor = 'black';//设置默认的a为黑色
-    for (var i = 0; i < allA.length; i++) {
+    for (let i = 0; i < allA.length; i++) {
         allA[i].num = i;
         //alert(allA[i].num);
         allA[i].onclick = function () {
@@ -84,14 +85,13 @@ window.onload = function () {
             index = 0;
             imgList.style.left = "0";
         }
-        for (var i = 0; i < allA.length; i++) {
+        for (let i = 0; i < allA.length; i++) {
             //去掉未点击的颜色  仍然保留a : hover有用
             allA[i].style.backgroundColor = "";
         }
         allA[index].style.backgroundColor = "black";
     }
 
-    var timer;
 
     function autoChange() {
         timer = setInterval(function () {
@@ -107,7 +107,7 @@ window.onload = function () {
 
 //可以根据 target 参数进行判断 向哪个方向移动
     function move(obj, attr, target, speed, callback) {
-        var current = parseInt(getStyle(obj, attr));
+        const current = parseInt(getStyle(obj, attr));
         //alert(current);
         //根据目标的位置来判定 speed的值是正是负
         if (current > target) {
@@ -117,14 +117,14 @@ window.onload = function () {
         clearInterval(obj.timer);
         //alert(oldValue);
         obj.timer = setInterval(function () {
-            var oldValue = parseInt(getStyle(obj, attr));
-            var newVal = oldValue + speed;
+            const oldValue = parseInt(getStyle(obj, attr));
+            let newVal = oldValue + speed;
             //如果移动的越界 进行重置
             if ((speed < 0 && newVal <= target) || (speed > 0 && newVal >= target)) {
                 newVal = target;
             }
             obj.style[attr] = newVal + "px";
-            if (newVal == target) {
+            if (newVal === target) {
                 clearInterval(obj.timer);
                 callback && callback();//回掉函数 先判断 有就执行 没有不执行
             }
@@ -134,6 +134,7 @@ window.onload = function () {
     //obj:获取样式元素
     //name:获取样式名
     function getStyle(obj, name) {
+        obj.currentStyle = undefined;
         if (window.getComputedStyle) {
             return getComputedStyle(obj, null)[name];
         } else {
